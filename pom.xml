@@ -11,7 +11,7 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-starter-parent</artifactId>
-		<version>Camden.SR7</version>
+		<version>Hoxton.SR8</version>
 	</parent>
 	<properties>
 		<java.version>1.8</java.version>
@@ -21,7 +21,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 	</dependencies>
 	<build>
@@ -31,7 +31,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<mainClass>
-						com.fattahi.cloud.discovery.DiscoveryServer
+						com.mft.cloud.discovery.DiscoveryServer
 					</mainClass>
 				</configuration>
 				<executions>
